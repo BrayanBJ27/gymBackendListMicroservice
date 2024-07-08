@@ -26,7 +26,7 @@ db.connect((err) => {
 
 // Route to get the list of reservations
 app.get('/reservations', (req, res) => {
-    const selectQuery = 'SELECT * FROM machine_reservations';
+    const query = 'SELECT * FROM machine_reservations';
     db.query(query, (err, results) => {
         if (err) {
             console.error('Error fetching reservations:', err);
