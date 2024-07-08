@@ -121,9 +121,9 @@ docker build -t gymlist .
 ## DockerHub
 ### DockerHub Repository
 
-[brayanbj27/bj-gymlist](https://hub.docker.com/r/brayanbj27/bj-gymlist)
+[brayanbj27/bd-list-gym-services](https://hub.docker.com/r/brayanbj27/bd-list-gym-services)
 
 Docker Pull Command
 ```sh
-docker pull brayanbj27/bj-gymlist
+docker pull brayanbj27/bd-list-gym-services
 ```
