@@ -114,7 +114,7 @@ Description: This route returns the reservation list of the machines in the gym.
 ### Create Docker Image with DockerFile
 
 ```sh
-docker build -t gymlist .
+docker build -t list-gym-services .
 ```
 ![Imagen de WhatsApp 2024-07-07 a las 22 58 14_c4beda41](https://github.com/BrayanBJ27/gymBackendListMicroservice/assets/87538474/051dba85-7a0a-4cdc-b51a-ea14ed724dd1)
 
