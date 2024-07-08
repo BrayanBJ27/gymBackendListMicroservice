@@ -1,4 +1,4 @@
-# GYM Service Machine Reservation List
+# GYM Machine Reservation Listing Service 
 
 This is the microservice to list the reservations of the GYM FITNESS BODY machines.
 
@@ -18,7 +18,7 @@ This is the microservice to list the reservations of the GYM FITNESS BODY machin
    - [Evidence](#evidence-create)
 3. [Usage](#usage)
    - [Verify Server Functionality](#verify-server-functionality)
-   - [Add a New Product](#add-a-new-product)
+   - [List all machine reservations](#list-all-machine-reservations)
 4. [Program Execution](#program-execution)
    - [Create Docker Image](#create-docker-image)
 5. [DockerHub](#dockerhub)
@@ -87,4 +87,43 @@ const db = mysql.createConnection({
 
 ```sh
 npm run start
+```
+
+### Evidence
+![Imagen de WhatsApp 2024-07-07 a las 23 14 03_b50f7b3d](https://github.com/BrayanBJ27/gymBackendListMicroservice/assets/87538474/ae40dc26-1e27-483c-84da-9adec0143af7)
+
+## Usage
+
+### Verify Server Functionality
+
+Method: GET  
+URL: `http://localhost:8089/`  
+Description: This route displays a message to verify that the server is running.
+![Captura de pantalla 2024-07-03 214528](https://github.com/BrayanBJ27/gymBackendListMicroservice/assets/87538474/a2f03d50-684d-40ee-805d-b401cfa48d16)
+
+
+### List all machine reservations
+
+Method: POST  
+URL: `http://localhost:8082/reservations`  
+Description: This route returns the reservation list of the machines in the gym.
+![image](https://github.com/BrayanBJ27/gymBackendListMicroservice/assets/87538474/5222af41-8674-4308-b20e-44e354ea5549)
+
+
+## Program Execution
+### Create Docker Image with DockerFile
+
+```sh
+docker build -t gymlist .
+```
+![Imagen de WhatsApp 2024-07-07 a las 22 58 14_c4beda41](https://github.com/BrayanBJ27/gymBackendListMicroservice/assets/87538474/051dba85-7a0a-4cdc-b51a-ea14ed724dd1)
+
+## DockerHub
+### DockerHub Repository
+
+[brayanbj27/bj-gymlist](https://hub.docker.com/r/brayanbj27/bj-gymlist)
+
+Docker Pull Command
+```sh
+docker pull brayanbj27/bj-gymlist
 ```
