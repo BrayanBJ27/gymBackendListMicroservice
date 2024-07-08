@@ -1,4 +1,4 @@
-# Create Reservations Machine GYM Service
+# GYM Service Machine Reservation List
 
 This is the microservice to list the reservations of the GYM FITNESS BODY machines.
 
@@ -39,8 +39,8 @@ The microservice `gymBackendListMicroservice` is in charge of listing all the re
 ### Clone the Repository
 
 ```sh
-git clone https://github.com/BrayanBJ27/gymBackendAddMicroservice.git
-cd gymBackendAddMicroservice
+git clone https://github.com/BrayanBJ27/gymBackendListMicroservice.git
+cd gymBackendListMicroservice
 ```
 
 ### Install Dependencies
