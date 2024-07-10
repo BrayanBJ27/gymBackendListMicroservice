@@ -20,11 +20,11 @@ jobs:
 
   deploy: 
     needs: build
-    runs-on: aws-list    
+    runs-on: bj-list    
     steps:
       - name: Pull image from docker hub
         run: docker pull brayanbj27/bd-list-gym-services:latest
       - name: Delete Old Container
-        run: docker rm -f listrmService || true
+        run: docker rm -f gymListService || true
       - name: Run docker container
-        run: docker run -d --name listrmService --network gym_network -p 8089:8089 brayanbj27/bd-list-gym-services
+        run: docker run -d --name gymListService --network gym_network -p 8089:8089 brayanbj27/bd-list-gym-services
