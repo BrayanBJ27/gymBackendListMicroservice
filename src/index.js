@@ -24,7 +24,7 @@ db.connect((err) => {
     console.log('Connected to the MySQL database.');
 });
 
-// Route to get the list of reservations
+// Route to get the list of reservations machines
 app.get('/reservations', (req, res) => {
     const query = 'SELECT * FROM machine_reservations';
     db.query(query, (err, results) => {
